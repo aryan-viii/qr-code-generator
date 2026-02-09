@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>QR Code Generator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Tahoma, sans-serif;
+            background: #f5f7fa;
+            color: #333;
+        }
+
+        /* Navbar */
+        .navbar {
+            background: #ffffff;
+            padding: 16px 32px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        /* Main Card */
+        .card {
+            max-width: 420px;
+            margin: 80px auto;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+        }
+
+        .card h2 {
+            margin-top: 0;
+            margin-bottom: 20px;
+            font-size: 22px;
+            text-align: center;
+        }
+
+        /* Form elements */
+        form p {
+            margin-bottom: 15px;
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+
+        input:focus, textarea:focus, select:focus {
+            outline: none;
+            border-color: #4f46e5;
+        }
+
+        /* Button */
+        button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 10px;
+            background: #4f46e5;
+            border: none;
+            border-radius: 6px;
+            color: #ffffff;
+            font-size: 15px;
+            font-weight: 500;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #4338ca;
+        }
+
+        /* Footer text */
+        .footer {
+            text-align: center;
+            margin-top: 15px;
+            font-size: 13px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        QR Code Generator
+    </div>
+
+    <div class="card">
+        <h2>Generate a QR Code</h2>
+
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+
+            <button type="submit">Generate QR</button>
+        </form>
+
+        <div class="footer">
+            Enter name and a link to generate your QR code
+        </div>
+    </div>
+
+</body>
+</html>
