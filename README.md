@@ -31,9 +31,10 @@ TECH STACK
 
 SETUP INSTRUCTIONS
 
+```bash
 1. Clone the repository
    git clone https://github.com/aryan-viii/qr-code-generator.git
-   cd REPO_NAME
+   cd qr-code-generator
 
 2. Create and activate a virtual environment
    python -m venv venv
@@ -50,7 +51,7 @@ SETUP INSTRUCTIONS
 
 6. Open the application in your browser
    http://127.0.0.1:8000/
-
+```
 --------------------------------------------------
 
 HOW THE APPLICATION WORKS
