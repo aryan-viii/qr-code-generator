@@ -31,27 +31,44 @@ TECH STACK
 
 SETUP INSTRUCTIONS
 
-```bash
 1. Clone the repository
+
+```bash
    git clone https://github.com/aryan-viii/qr-code-generator.git
    cd qr-code-generator
+   ```
 
 2. Create and activate a virtual environment
+
+```bash
    python -m venv venv
    venv\Scripts\activate
+```
 
 3. Install dependencies
+
+```bash
    pip install django qrcode pillow
+```
 
 4. Apply database migrations
+
+```bash
    python manage.py migrate
+```
 
 5. Start the development server
+
+```bash
    python manage.py runserver
+```
 
 6. Open the application in your browser
+
+```bash
    http://127.0.0.1:8000/
 ```
+
 --------------------------------------------------
 
 HOW THE APPLICATION WORKS
