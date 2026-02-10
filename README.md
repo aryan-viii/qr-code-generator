@@ -29,41 +29,6 @@ TECH STACK
 
 --------------------------------------------------
 
-PROJECT STRUCTURE
-
-QR
-│
-├── media
-│       (generated QR code images are stored here)
-│
-├── QR
-│   ├── __init__.py
-│   ├── asgi.py
-│   ├── settings.py
-│   ├── urls.py
-│   └── wsgi.py
-│
-├── qr_code
-│   ├── migrations
-│   ├── templates
-│   │   └── qr_code
-│   │       ├── home.html
-│   │       └── qr_result.html
-│   ├── __init__.py
-│   ├── admin.py
-│   ├── apps.py
-│   ├── forms.py
-│   ├── models.py
-│   ├── urls.py
-│   └── views.py
-│
-├── .gitignore
-├── db.sqlite3
-├── manage.py
-└── README.md
-
---------------------------------------------------
-
 SETUP INSTRUCTIONS
 
 1. Clone the repository
